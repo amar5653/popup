@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(243, 218, 181);
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    padding:50px;
+    position:relative;
+}
+.btn{
+    font-size:30px;
+    background-color: rgb(47, 76, 4);
+    padding:5px;
+    border-radius:5px;
+    border:none;
+outline:none;
+color:rgb(234, 227, 236);
+font-weight: 500;
+cursor: pointer;
+}
+.pop-up{
+    text-align:center;
+    background-color: rgb(156, 128, 182);
+    width:500px;
+    height:250px;
+    padding:20px;
+    margin:50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(106, 36, 36);
+    position: absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+}
+#ok-btn{
+    width:100%;
+    margin:40px auto;
+}
+.pop-up h1{
+    color:rgb(15, 56, 42);
+    margin:20px auto;
+    
+}
+.pop-up i{
+    width:80px;
+    height:80px;
+    background-color: rgb(17, 89, 17);
+    border-radius: 50%;
+   margin-bottom:20px;
+    position:absolute;
+    top:0;
+    left:50%;
+   transform: translate(-50%, -50%);
+   color:aliceblue;
+   font-size:80px;
+}
+#submit-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+   transform: translate(-50%, -50%);
+   
+}
+.showpopup{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(1);
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+}
